@@ -3,6 +3,8 @@
 Encourage users to buy a NO-ADS in-app-product by showing them a message after X times they open the app.
 In the shown encouraging message they can choose "Buy", "Later" or "Never".
 
+<img src="https://github.com/firisoft/android-buy-noads-encourager/raw/master/screenshot1.png" width="250" ></img>
+
 # HOW TO USE:
 
 Open your root level build.gradle file and :
