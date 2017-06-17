@@ -1,5 +1,3 @@
-# Encourage users to buy no-ads version of your app:
-
 Encourage users to buy a NO-ADS in-app-product by showing them a message after X times they open the app.
 In the shown encouraging message they can choose "Buy", "Later" or "Never".
 
