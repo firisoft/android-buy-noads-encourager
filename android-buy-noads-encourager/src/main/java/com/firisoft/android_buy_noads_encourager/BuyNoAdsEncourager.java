@@ -18,9 +18,16 @@ import android.widget.LinearLayout;
 public class BuyNoAdsEncourager {
     private Activity _activity;
     OnBuyClickListener _onBuyClickListener;
+    private String _buyButtonTitle;
 
     public BuyNoAdsEncourager(Activity currentActivity) {
         _activity = currentActivity;
+        _buyButtonTitle = "BUY NO-ADS";
+    }
+
+    public BuyNoAdsEncourager(Activity currentActivity, String priceTextWithCurrency) {
+        _activity = currentActivity;
+        _buyButtonTitle = "BUY ("+ priceTextWithCurrency + ")" ;
     }
 
     public void setOnBuyClickListener(OnBuyClickListener onBuyClickListener) {
@@ -60,7 +67,7 @@ public class BuyNoAdsEncourager {
 
     private void askToBuy() {
         final AlertDialog dialog = new AlertDialog.Builder(_activity)
-                .setPositiveButton("Buy NO-ADS", new DialogInterface.OnClickListener() {
+                .setPositiveButton(_buyButtonTitle, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // do positive action
                         setDidUserBuyValue("Buyd");
